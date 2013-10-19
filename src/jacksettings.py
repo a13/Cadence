@@ -559,6 +559,8 @@ class JackSettingsW(QDialog):
                 value = dbus.String("seq")
             elif self.ui.obj_driver_midi_driver.currentIndex() == 2:
                 value = dbus.String("raw")
+            elif self.ui.obj_driver_midi_driver.currentIndex() == 3:
+                value = dbus.String("alsarawmidi")
             else:
                 value = None
                 print("JackSettingsW::saveDriverSettings() - Cannot save midi-driver value")
@@ -660,6 +662,8 @@ class JackSettingsW(QDialog):
                     self.ui.obj_driver_midi_driver.setCurrentIndex(1)
                 elif value == "raw":
                     self.ui.obj_driver_midi_driver.setCurrentIndex(2)
+                elif value == "alsarawmidi":
+                    self.ui.obj_driver_midi_driver.setCurrentIndex(3)
                 else:
                     self.ui.obj_driver_midi_driver.setEnabled(False)
                     print("JackSettingsW::loadDriverSettings() - Invalid midi-driver value '%s'" % value)

@@ -1201,12 +1201,17 @@ Also known as buffer size</string>
                 </item>
                 <item>
                  <property name="text">
-                  <string>ALSA Sequencer</string>
+                  <string>Legacy ALSA Sequencer</string>
                  </property>
                 </item>
                 <item>
                  <property name="text">
-                  <string>ALSA Raw-MIDI</string>
+                  <string>Legacy ALSA Raw-MIDI</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>ALSA Raw Midi</string>
                  </property>
                 </item>
                </widget>
